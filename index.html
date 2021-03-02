@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Ron's CV!</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+       
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
+    
+    <!-- DEMO ONLY --> 
+    <link id="theme-style" rel="stylesheet" href="demo/demo.css">
+
+
+</head> 
+
+<body>	
+
+    <article class="resume-wrapper text-center position-relative">
+	    <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
+		    <header class="resume-header pt-4 pt-md-0">
+			    <div class="media flex-column flex-md-row">
+				    <img class="mr-3 img-fluid picture mx-auto" src="assets/images/profile.jpg" alt="">
+				    <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+					    <div class="primary-info">
+						    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">Ronald Harvey</h1>
+						    <div class="title mb-3">Software and Game Developer</div>
+						    <ul class="list-unstyled">
+							    <li class="mb-2"><a href="#"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i>zestydevy@gmail.com</a></li>
+							    <li><a href="#"><i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i>+1 417 771 6711</a></li>
+						    </ul>
+					    </div><!--//primary-info-->
+					    <div class="secondary-info ml-md-auto mt-2">
+						    <ul class="resume-social list-unstyled">
+				                <li class="mb-3"><a href="https://www.linkedin.com/in/ronald-harvey-7498541a2/"><span class="fa-container text-center mr-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/ronald-harvey</a></li>
+				                <li class="mb-3"><a href="https://github.com/zestydevy"><span class="fa-container text-center mr-2"><i class="fab fa-github-alt fa-fw"></i></span>github.com/zestydevy</a></li>
+						    </ul>
+					    </div><!--//secondary-info-->
+					    
+				    </div><!--//media-body-->
+			    </div><!--//media-->
+		    </header>
+		    <div class="resume-body p-5">
+			    <section class="resume-section summary-section mb-5">
+				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
+				    <div class="resume-section-content">
+					    <p class="mb-0">Passionate programmer with a diverse background in software development, reverse engineering, and audio engineering who’s excited to learn and experience new ideas and concepts. Very approachable and is looking to become a valuable asset to your team.</p>
+				    </div>
+			    </section><!--//summary-section-->
+			    <div class="row">
+				    <div class="col-lg-9">
+					    <section class="resume-section experience-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Personal Projects</h2>
+						    <div class="resume-section-content">
+							    <div class="resume-timeline position-relative">
+								    <article class="resume-timeline-item position-relative pb-5">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Nest Engine</h3>
+										    </div><!--//row-->
+										    <div class="resume-position-time">2020 - Present</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <p>A complete game engine written from the ground up for the <i>Nintendo 64</i> in C++17.</p>
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Info</h4>
+										    <p>Nest Engine was created after two months of development for a game jam competition.
+												<i>The Swoop 64</i> was thus created using the engine and won third place.
+											</p>
+										    <ul>
+											    <li>Streamed audio API. Samples themselves are VADPCM-encoded and are decoded into an audio heap, which is eventually DMA'd to the Audio DAC. The audio heap can be expanded to any size needed. Its location is at the very end of memory, right above the game's framebuffer. Of course, changing the heap location is allowed, but has to be approached with caution.
+											    <li>Versatile, intuitive vector and matrix API for complex graphical calculations.</li>
+											    <li>3D collision system for both actor/object and floor/ceiling interaction.</li>
+											    <li>Primitive, yet effective animation system. The <i>Nintendo 64</i> has a rough skinned mesh limitation, so one method around this was to implement a vertex animation system. The size of vertices raised concern, so each vertex is lerped between frames.</li>
+												<li>Relocatable module system for code and data that cannot fit within <i>Nintendo 64</i> 's four megabyte memory range. A tool was written to parse pre-compiled objects, extract the relocation table and data, and finally use this data to relocate the aforementioned code by overwriting it directly in memory during game runtime.</li>
+												<li>For creating/modifying/editing game data such as models, object positions, and etc., a custom Blender plug-in was written to export model and scene data for the <i>Nintendo 64</i> to parse. N64 uses a graphics API that is very similar to legacy OpenGL, as it was created by SGI. Each graphics command gets compiled into a 64-bit command, forming a display list, which is then passed to the secondary CPU to process.
+										    </ul>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">C++</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Blender</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Audacity</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+								    </article><!--//resume-timeline-item-->
+								    
+								    
+								    
+								    <article class="resume-timeline-item position-relative pb-5">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Glover 2</h3>
+										    </div><!--//row-->
+										    <div class="resume-position-time">2020 - Present</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Info</h4>
+											<p><i>Glover 2</i> is a <i>Nintendo 64</i> title that was planned to release in the Winter of 1999. Due to the .com bubble of that era, the team was let go and the game was unfortunately cancelled. A different company now owning the rights to the game has freelanced me to finish the game for a commercial release.</p>
+											<ul>
+												<li>CI to reduce team errors and improve workflow</li>
+											</ul>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">C99</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">MIPS</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+								    </article><!--//resume-timeline-item-->
+								    
+								    <article class="resume-timeline-item position-relative">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Platforming Engine</h3>
+										    </div><!--//row-->
+										    <div class="resume-position-time">2018 - Present</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <p>3D platformer system in Unity</p>
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Info</h4>
+											<p>API and physics system to make traditional 3D platformers an easier pleasure to develop.</p>
+											<ul>
+												<li>Event system that utilizes the Lua Virtual Machine. Responsible for handling specific game tasks, i.e., cutscenes, AI control, music/sound cues, etc.</li>
+												<li>Audio management is handled through the middleware FMOD. Excellent for 3D sound position, filtering, accurate sample loop points, sound groups, and many more advantages compared to Unity's audio manager.</li>
+												<li>Custom player and camera movement with the imlemented physics system. </li>
+											</ul>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Unity</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">C#</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">FMOD</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Blender</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+								    </article><!--//resume-timeline-item-->
+
+									<article class="resume-timeline-item position-relative pb-5">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Super Jolly Engine</h3>
+										    </div><!--//row-->
+										    <div class="resume-position-time">2017 - Present</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <p>Custom game engine for the <i>Super Nintendo Entertainment System</i> written in 65C816 assembly.</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Info</h4>
+										    <p>As no personal nor commercially  released games have been developed with the engine yet, it is fully capable of running sprite-intensive and high performant game software!</p>
+											<ul>
+												<li>Fully custom audio driver, called <i>F700</i>. Written in assembly and runs on the SPC700 architecture, which is an 8-bit CPU that channels data between it and the DSP chip. F700 is based on module trackers, so music and sounds are processed rows and columns of data. The audio CPU does not have interrupts, so time is based on three MMIO registers you poll while the processor runs. The driver polls the input registers from the main CPU until a command is received; i.e., the game engine sends a byte to the DSP telling it to play a sound at index X. Samples are 4-bit ADPCM-encoded.</li>
+												<li>Parent-child object system designed for easy object manipulation and management. </li>
+												<li>Versatile assembler written to support a wide range of instruction set architectures. Uses an instruction set table syntax file for parsing instructions on the fly, designed to read any kind of architecture desired.</li>
+												<li>Tool was written to take standard formatted images and convert them to the SNES' bitplane data format.</li>
+											</ul>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">65C816 Assembly</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">SPC700 Assembly</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">C++</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+								    </article><!--//resume-timeline-item-->
+								    
+								    
+							    </div><!--//resume-timeline-->
+							    
+							    
+							    
+							    
+							    
+							    
+						    </div>
+					    </section><!--//experience-section-->
+				    </div>
+				    <div class="col-lg-3">
+					    <section class="resume-section skills-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
+						    <div class="resume-section-content">
+						        <div class="resume-skill-item">
+							        <h4 class="resume-skills-cat font-weight-bold">Frontend</h4>
+							        <ul class="list-unstyled mb-4">
+								        <li class="mb-2">
+								            <div class="resume-skill-name">JavaScript</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Node.js</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">HTML/CSS/SASS/LESS</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+							        </ul>
+						        </div><!--//resume-skill-item-->
+						        
+						        <div class="resume-skill-item">
+						            <h4 class="resume-skills-cat font-weight-bold">Backend</h4>
+							        <ul class="list-unstyled">
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Python</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">C++</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">C</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 86%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+										<li class="mb-2">
+								            <div class="resume-skill-name">Lua</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 66%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+							        </ul>
+						        </div><!--//resume-skill-item-->
+						        
+						        <div class="resume-skill-item">
+						            <h4 class="resume-skills-cat font-weight-bold">Others</h4>
+						            <ul class="list-inline">
+							            <li class="list-inline-item"><span class="badge badge-light">Git</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">SVN</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">Visual Studio</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">Visual Studio Code</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">Dear ImGui</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">FMOD Studio</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">Unity</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">Unreal Engine 4</span></li>
+						            </ul>
+						        </div><!--//resume-skill-item-->
+						    </div><!--resume-section-content-->
+					    </section><!--//skills-section-->
+					   
+					    
+				    </div>
+			    </div><!--//row-->
+		    </div><!--//resume-body-->
+		    
+		    
+	    </div>
+    </article>  
+    
+    <!-- DEMO ONLY -->
+    <script type="text/javascript" src="demo/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="demo/demo.js"></script> 
+
+    
+
+</body>
+</html> 
+
