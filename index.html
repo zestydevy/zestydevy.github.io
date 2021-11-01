@@ -95,11 +95,38 @@
 
 
 										<center>
-										<video width="400" controls>
-											<source src="birdjam.mp4" type="video/mp4">
-											Your browser does not support HTML video.
-										</video>
+											<div id="wrapper"> 
+												<div id="home1">
+												 <video width="400" height="300" controls="controls" preload="none"> 
+												   <source type="video/mp4" src="birdjam.mp4" /> 
+												 </video>
+												</div>
+												<div id="home2">
+												 <video width="400" height="300" controls="controls" preload="none"> 
+												   <source type="video/mp4" src="n64.mp4" /> 
+												 </video>
+												</div> 
+											  </div>
 										</center>
+
+									<style>#wrapper { 
+										width: 920px; 
+										height: 350px; 
+										margin: 0 auto; 
+									} 
+									
+									#home1 { 
+										width: 400px; 
+										height: 300px; 
+										float: left; 
+									} 
+									
+									#home2 { 
+										width: 400px; 
+										height: 300px; 
+										float: right; 
+										margin-right: 50px;
+									}</style>
 
 								    </article><!--//resume-timeline-item-->
 								    
@@ -145,20 +172,25 @@
 									    
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1">Glover 2</h3>
+										        <h3 class="resume-position-title font-weight-bold mb-1">Dinosaur Planet Decompilation</h3>
 										    </div><!--//row-->
-										    <div class="resume-position-time">2020 - Present</div>
+										    <div class="resume-position-time">2021 - Present</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Info</h4>
-											<p><i>Glover 2</i> is a <i>Nintendo 64</i> title that was planned to release in the Winter of 1999. Due to the .com bubble of that era, the team was let go and the game was unfortunately cancelled. A different company now owning the rights to the game has freelanced me to finish the game for a commercial release.</p>
+											<p>Byte-accurate decompilation of the unreleased <i>Nintendo 64</i> game Dinosaur Planet.</p>
 											<ul>
+												<li>Taking apart library code to understand the underlying functionality</li>
+												<li>20% completion, with a fast pace of relocatable code and data compilation</li>
+												<li>Understanding of compiler intrinsics to accurately disassemble and decompile code</li>
+												<li>Command-line tool for converting standard ELF binaries into the propritery relocatable module format</li>
 												<li>CI to reduce team errors and improve workflow</li>
 											</ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
 										    <ul class="list-inline">
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">C99</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">C89</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">MIPS</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Python</span></li>
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
 
